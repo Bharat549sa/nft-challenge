@@ -29,9 +29,9 @@ const NFTPage = () => {
                 </div >
                 {/* Right */}
                 < div className='col-span-6 p-5 bg-nft-background shadow-black mt-20 text-center space-y-10 md:text-left flex flex-col items-left justify-between pt-20 pb-20' >
-                    <h1 className='text-5xl font-bold'>Welcome !!</h1>
-                    <h1 className='text-violet-800 font-bold text-2xl'>To The PAPAFAM Ape Coding Club | NFT Drop</h1>
-                    <h1 className='text-pink-600 text-xl'>13 / 21 NFT's claimed</h1>
+                    <h1 className='text-5xl font-bold'>{"Welcome !!"}</h1>
+                    <h1 className='text-violet-800 font-bold text-2xl'>{"To The PAPAFAM Ape Coding Club | NFT Drop"}</h1>
+                    <h1 className='text-pink-600 text-xl'>{"13 / 21 NFT's claimed"}</h1>
                 </div >
 
             </div>
