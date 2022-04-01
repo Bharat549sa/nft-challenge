@@ -4,11 +4,6 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        'nft-background': "url('/background.png')",
-      }
-    },
   },
   plugins: [],
 }

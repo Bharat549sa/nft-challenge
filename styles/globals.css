@@ -4,8 +4,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
 html,
 body {
-
+  color: white;
   padding: 0;
   margin: 0;
   font-family: 'Inder', sans-serif;
+}
+
+.special-card::before{
+  content: '';
+  height: 100%;
+  width: 100%;
+  z-index: -7;
+  position: absolute;
+  background-color: brown;
+  border-radius: 18px;
 }
