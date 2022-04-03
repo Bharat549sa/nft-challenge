@@ -53,10 +53,6 @@ const NFTPage = ({ collection }: Props) => {
             },
         });
         nftDrop.claimTo(address, wantToClaimCount).then(async (tx) => {
-            const receipt = tx[0].receipt;
-            const claimedTokenId = tx[0].id;
-            const claimedNFT = await tx[0].data();
-
             toast.success('Successfully Minted !!', {
                 duration: 8000,
                 style: {
@@ -136,7 +132,7 @@ const NFTPage = ({ collection }: Props) => {
                             claimedSupply === totalSupply ?
                                 (<>SOLD OUT</>)
                                 :
-                                (<>Mint NFT ({pricaInETH} ETH)</>)}
+                                (<>Mint NFT ({Number(pricaInETH) * wantToClaimCount} ETH)</>)}
                     </button>
                 </div>
             </div>
