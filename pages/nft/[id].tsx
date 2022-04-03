@@ -126,7 +126,7 @@ const NFTPage = ({ collection }: Props) => {
 
                 </div>
                 <div className="flex items-center justify-between md:w-1/2">
-                    <input className="text-black w-1/4 p-2" type="number" id="wantToClaimCount" onChange={() => setWantToClaimCount(Number((document?.getElementById('wantToClaimCount') as HTMLInputElement).value))} placeholder="claims count" min={1} max={totalSupply} />
+                    <input className="text-black w-1/4 p-2" type="number" id="wantToClaimCount" onChange={() => setWantToClaimCount(Number((document?.getElementById('wantToClaimCount') as HTMLInputElement).value))} placeholder="claims count" min={1} max={totalSupply - claimedSupply} />
                     <button onClick={mintNFT} disabled={loading || totalSupply === claimedSupply || !address || wantToClaimCount < 1} style={{ margin: "auto 0" }} className='cursor-pointer bg-white text-black font-bold w-2/3 py-2 disabled:bg-gray-400'>
                         {loading ? (<>Loading ... </>) :
                             claimedSupply === totalSupply ?

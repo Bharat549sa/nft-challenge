@@ -11,8 +11,8 @@ const Home = ({ collections }: Props) => {
     let html_collection = []
     collections.forEach((collection) => {
       html_collection.push(
-        <Link href={`/nft/${collection.slug.current}`} passHref>
-            <div key={collection.id} className='shadow-xl shadow-black cursor-pointer  rounded-xl w-72 h-screen/2 bg-[#03071E]  md:relative md:before:h-full md:before:w-full md:before:bg-[#9D0208] md:before:absolute md:before:rounded-xl md:before:-z-10 md:hover:before:rotate-12 md:hover:before:duration-100'>
+        <Link key={collection.id} href={`/nft/${collection.slug.current}`} passHref>
+            <div  className='shadow-xl shadow-black cursor-pointer  rounded-xl w-72 h-screen/2 bg-[#03071E]  md:relative md:before:h-full md:before:w-full md:before:bg-[#9D0208] md:before:absolute md:before:rounded-xl md:before:-z-10 md:hover:before:rotate-12 md:hover:before:duration-100'>
               <div className='p-2'>
                 <img className='rounded-t-xl' src={urlFor(collection.mainImage).url()} alt="" />
               </div>
