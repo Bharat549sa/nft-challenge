@@ -1,7 +1,4 @@
 import type { GetServerSideProps, NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 import { sanityClient, urlFor } from '../sanity';
 import { Collection } from '../typings';
 import Link from 'next/link';
